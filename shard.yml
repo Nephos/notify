@@ -1,0 +1,11 @@
+name: notify
+version: 0.1.0
+
+authors:
+  - Arthur Poulet <arthur.poulet@mailoo.org>
+
+license: MIT
+
+dependencies:
+  libnotify:
+    github: splattael/libnotify.cr
