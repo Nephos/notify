@@ -1,7 +1,6 @@
 require "./wrapper"
 
 class Notify::Notification
-
   getter title : String?
   getter body : String?
   getter icon : String?
@@ -31,5 +30,4 @@ class Notify::Notification
     end
 
   {% end %}
-
 end

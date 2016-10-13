@@ -5,15 +5,15 @@ module Notify::Wrapper
     Libnotify::C.notify_init app_name
   end
 
-  def notify_uninit() : Void
+  def notify_uninit : Void
     Libnotify::C.notify_uninit
   end
 
-  def notify_is_initted() : Bool
+  def notify_is_initted : Bool
     Libnotify::C.notify_is_initted
   end
 
-  def notify_get_app_name() : String
+  def notify_get_app_name : String
     String.new Libnotify::C.notify_get_app_name
   end
 
@@ -26,7 +26,6 @@ module Notify::Wrapper
   #                                              char **ret_vendor,
   #                                              char **ret_version,
   #                                              char **ret_spec_version);
-
 
   def notify_notification_new(summary : String,
                               body : String,
